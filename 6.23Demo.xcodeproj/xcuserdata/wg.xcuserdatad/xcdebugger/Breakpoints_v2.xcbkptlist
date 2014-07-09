@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "6.23Demo/MySceneSec.m"
-            timestampString = "426503749.840135"
+            timestampString = "426568136.576944"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
             landmarkName = "-stickMoveWithVector:force:"
             landmarkType = "5">
          </BreakpointContent>

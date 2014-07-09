@@ -202,6 +202,7 @@ static const uint32_t bulletCategory = 0x1 <<4;
     [fireNode setScale:7];
     fireNode.position = CGPointMake(0, -plane.size.height*2.1);
     [plane addChild:fireNode];
+    
 }
 -(void)addPlane
 {
@@ -213,11 +214,23 @@ static const uint32_t bulletCategory = 0x1 <<4;
     [plane setScale:0.2];
 
     plane.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:plane.size];
+    CGMutablePathRef planePath = CGPathCreateMutable();
+    CGPathMoveToPoint(planePath, nil, 0, plane.size.height/2);
+    CGPathAddLineToPoint(planePath, nil, plane.size.width/2, -plane.size.height/2);
+     CGPathAddLineToPoint(planePath, nil, -plane.size.width/2, -plane.size.height/2);
+   //  CGPathAddLineToPoint(planePath, nil, 0, plane.size.height/2);
+    CGPathCloseSubpath(planePath);
+//    SKShapeNode *ball = [[SKShapeNode alloc] init];
+//    ball.path = planePath;
+//    ball.position = CGPointMake(200, 200);
+//    ball.fillColor = [SKColor blueColor];
+//    [self addChild:ball];
+    plane.physicsBody = [SKPhysicsBody bodyWithPolygonFromPath:planePath];
     plane.physicsBody.dynamic = YES;
     plane.physicsBody.affectedByGravity = NO;
     plane.physicsBody.categoryBitMask = planeCategory;
-    plane.physicsBody.collisionBitMask = boundaryCategory;
-    plane.physicsBody.contactTestBitMask = blockCategory;
+    plane.physicsBody.collisionBitMask = boundaryCategory|spaceshipCategory;
+    plane.physicsBody.contactTestBitMask = blockCategory |spaceshipCategory;
     
     SKAction * makeFire = [SKAction sequence:@ [
                                                  [SKAction performSelector:@selector(addBullet) onTarget:self],
@@ -237,7 +250,7 @@ static const uint32_t bulletCategory = 0x1 <<4;
     fire1.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:fire1.size];
     fire1.physicsBody.affectedByGravity = NO;
     fire1.physicsBody.categoryBitMask = bulletCategory;
-    fire1.physicsBody.contactTestBitMask = blockCategory |spaceshipCategory;
+    fire1.physicsBody.contactTestBitMask = blockCategory|spaceshipCategory ;
     fire1.physicsBody.collisionBitMask = spaceshipCategory;
     SKAction *move = [SKAction moveByX:cosf(plane.zRotation+M_PI/2)*480 y:sinf(plane.zRotation+M_PI/2)*480 duration:1];
     [self addChild:fire1];
@@ -325,13 +338,14 @@ static const uint32_t bulletCategory = 0x1 <<4;
     hull.physicsBody.density = 20;
     //hull.physicsBody.restitution = 1.f;
     hull.physicsBody.dynamic = NO;
+  //  hull.physicsBody.affectedByGravity = NO;
     hull.physicsBody.linearDamping = 0.8f;
     hull.zPosition = 1;
     NSLog(@"blendMode:%d",hull.blendMode);
    // hull.blendMode = SKBlendModeAdd;
 
     hull.physicsBody.categoryBitMask = spaceshipCategory;
-    hull.physicsBody.contactTestBitMask = bulletCategory;
+    hull.physicsBody.contactTestBitMask = bulletCategory ;
 //    hull.physicsBody.collisionBitMask = blockCategory;
    // hull.physicsBody.linearDamping = 1.f;
     return hull;
