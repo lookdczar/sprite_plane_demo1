@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D698A8D1196A33C000023563 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = D698A8D0196A33C000023563 /* Joystick.m */; };
+		D698A8D3196A3B5A00023563 /* stickBase.png in Resources */ = {isa = PBXBuildFile; fileRef = D698A8D2196A3B5A00023563 /* stickBase.png */; };
+		D6B9B8471957F79700A1E36C /* MySceneSec.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B9B8461957F79700A1E36C /* MySceneSec.m */; };
+		D6B9B85C19595A4100A1E36C /* image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6B9B85B19595A4100A1E36C /* image.bundle */; };
+		D6B9B88119624A1500A1E36C /* fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6B9B87F19624A1500A1E36C /* fire.sks */; };
+		D6B9B88219624A1500A1E36C /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B9B88019624A1500A1E36C /* spark.png */; };
+		D6B9B8841962794000A1E36C /* fireBack.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6B9B8831962794000A1E36C /* fireBack.sks */; };
 		D6E71F3E1957CD2900926278 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E71F3D1957CD2900926278 /* Foundation.framework */; };
 		D6E71F401957CD2900926278 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E71F3F1957CD2900926278 /* CoreGraphics.framework */; };
 		D6E71F421957CD2900926278 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E71F411957CD2900926278 /* UIKit.framework */; };
@@ -38,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D698A8CF196A33C000023563 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		D698A8D0196A33C000023563 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
+		D698A8D2196A3B5A00023563 /* stickBase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickBase.png; sourceTree = "<group>"; };
+		D6B9B8451957F79700A1E36C /* MySceneSec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySceneSec.h; sourceTree = "<group>"; };
+		D6B9B8461957F79700A1E36C /* MySceneSec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySceneSec.m; sourceTree = "<group>"; };
+		D6B9B85B19595A4100A1E36C /* image.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = image.bundle; sourceTree = "<group>"; };
+		D6B9B87F19624A1500A1E36C /* fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fire.sks; sourceTree = "<group>"; };
+		D6B9B88019624A1500A1E36C /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		D6B9B8831962794000A1E36C /* fireBack.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireBack.sks; sourceTree = "<group>"; };
 		D6E71F3A1957CD2900926278 /* 6.23Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6.23Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E71F3D1957CD2900926278 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D6E71F3F1957CD2900926278 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +139,7 @@
 		D6E71F451957CD2900926278 /* 6.23Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D6B9B85B19595A4100A1E36C /* image.bundle */,
 				D6E71F4E1957CD2900926278 /* AppDelegate.h */,
 				D6E71F4F1957CD2900926278 /* AppDelegate.m */,
 				D6E71F511957CD2900926278 /* Main_iPhone.storyboard */,
@@ -131,9 +148,17 @@
 				D6E71F581957CD2900926278 /* ViewController.m */,
 				D6E71F5A1957CD2900926278 /* MyScene.h */,
 				D6E71F5B1957CD2900926278 /* MyScene.m */,
+				D6B9B8451957F79700A1E36C /* MySceneSec.h */,
+				D6B9B8461957F79700A1E36C /* MySceneSec.m */,
+				D698A8CF196A33C000023563 /* Joystick.h */,
+				D698A8D0196A33C000023563 /* Joystick.m */,
 				D6E71F5D1957CD2900926278 /* Spaceship.png */,
 				D6E71F5F1957CD2900926278 /* Images.xcassets */,
 				D6E71F461957CD2900926278 /* Supporting Files */,
+				D6B9B87F19624A1500A1E36C /* fire.sks */,
+				D6B9B8831962794000A1E36C /* fireBack.sks */,
+				D6B9B88019624A1500A1E36C /* spark.png */,
+				D698A8D2196A3B5A00023563 /* stickBase.png */,
 			);
 			path = 6.23Demo;
 			sourceTree = "<group>";
@@ -214,6 +239,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = W.C;
 				TargetAttributes = {
+					D6E71F391957CD2900926278 = {
+						DevelopmentTeam = TLSAQMX293;
+					};
 					D6E71F641957CD2900926278 = {
 						TestTargetID = D6E71F391957CD2900926278;
 					};
@@ -244,8 +272,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E71F5E1957CD2900926278 /* Spaceship.png in Resources */,
+				D6B9B85C19595A4100A1E36C /* image.bundle in Resources */,
 				D6E71F601957CD2900926278 /* Images.xcassets in Resources */,
 				D6E71F561957CD2900926278 /* Main_iPad.storyboard in Resources */,
+				D6B9B88119624A1500A1E36C /* fire.sks in Resources */,
+				D6B9B88219624A1500A1E36C /* spark.png in Resources */,
+				D6B9B8841962794000A1E36C /* fireBack.sks in Resources */,
+				D698A8D3196A3B5A00023563 /* stickBase.png in Resources */,
 				D6E71F531957CD2900926278 /* Main_iPhone.storyboard in Resources */,
 				D6E71F4A1957CD2900926278 /* InfoPlist.strings in Resources */,
 			);
@@ -270,6 +303,8 @@
 				D6E71F591957CD2900926278 /* ViewController.m in Sources */,
 				D6E71F501957CD2900926278 /* AppDelegate.m in Sources */,
 				D6E71F4C1957CD2900926278 /* main.m in Sources */,
+				D6B9B8471957F79700A1E36C /* MySceneSec.m in Sources */,
+				D698A8D1196A33C000023563 /* Joystick.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,10 +439,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "6.23Demo/6.23Demo-Prefix.pch";
 				INFOPLIST_FILE = "6.23Demo/6.23Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -418,10 +457,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "6.23Demo/6.23Demo-Prefix.pch";
 				INFOPLIST_FILE = "6.23Demo/6.23Demo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -486,6 +529,7 @@
 				D6E71F781957CD2900926278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6E71F791957CD2900926278 /* Build configuration list for PBXNativeTarget "6.23DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +538,7 @@
 				D6E71F7B1957CD2900926278 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
